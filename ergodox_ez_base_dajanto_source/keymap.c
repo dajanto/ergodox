@@ -59,8 +59,8 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
-    DE_CIRC,        KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           TG(1),                                          TG(4),          KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           DE_SS,
-    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(1),                                          DE_PLUS,        DE_Z,           KC_U,           KC_I,           KC_O,           KC_P,           DE_UE,
+    DE_CIRC,        KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           TG(1),                                          TG(1),          KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           DE_SS,
+    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(4),                                          DE_PLUS,        DE_Z,           KC_U,           KC_I,           KC_O,           KC_P,           DE_UE,
     KC_ESCAPE,      KC_A,           KC_S,           KC_D,           KC_F,           KC_G,                                                                           KC_H,           KC_J,           KC_K,           KC_L,           DE_OE,          DE_AE,
     KC_LSHIFT,      DE_Y,           KC_X,           KC_C,           KC_V,           KC_B,           TG(3),                                          DE_HASH,        KC_N,           KC_M,           KC_COMMA,       KC_DOT,         DE_MINS,        KC_RSHIFT,
     KC_LCTRL,       KC_LGUI,        KC_LALT,        KC_LALT,        KC_LALT,                                                                                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_RALT,
@@ -70,10 +70,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [1] = LAYOUT_ergodox_pretty(
     KC_ESCAPE,      KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,
-    KC_TRANSPARENT, KC_EXLM,        KC_AT,          KC_LCBR,        KC_RCBR,        KC_PIPE,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_UP,          KC_7,           KC_8,           KC_9,           KC_ASTR,        KC_F12,
-    KC_TRANSPARENT, KC_HASH,        KC_DLR,         KC_LPRN,        KC_RPRN,        KC_GRAVE,                                                                       KC_DOWN,        KC_4,           KC_5,           KC_6,           KC_PLUS,        KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_PERC,        KC_CIRC,        KC_LBRACKET,    KC_RBRACKET,    KC_TILD,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_AMPR,        KC_1,           KC_2,           KC_3,           KC_BSLASH,      KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_EQUAL,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_KP_0,        KC_KP_COMMA,    KC_KP_DOT,      KC_EQUAL,       KC_TRANSPARENT,
+    KC_TRANSPARENT, KC_EXLM,        KC_AT,          DE_LCBR,        DE_RCBR,        KC_PIPE,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_UP,          KC_7,           KC_8,           KC_9,           KC_ASTR,        KC_F12,
+    KC_TRANSPARENT, KC_HASH,        KC_DLR,         DE_LPRN,        DE_RPRN,        DE_ACUT,                                                                        KC_DOWN,        KC_4,           KC_5,           KC_6,           KC_PLUS,        KC_DELETE,
+    KC_TRANSPARENT, KC_PERC,        KC_CIRC,        DE_LBRC,        DE_RBRC,        KC_TILD,        KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_AMPR,        KC_1,           KC_2,           KC_3,           KC_BSLASH,      KC_TRANSPARENT,
+    KC_TRANSPARENT, KC_EQUAL,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_0,           KC_COMMA,       KC_DOT,         KC_EQUAL,       KC_TRANSPARENT,
                                                                                                     RGB_MOD,        RGB_VAI,        KC_MEDIA_PLAY_PAUSE,KC_MEDIA_PREV_TRACK,
                                                                                                                     HSV_86_255_128, KC_TRANSPARENT,
                                                                                     LED_LEVEL,      HSV_172_255_255,HSV_27_255_255, KC_TRANSPARENT, KC_TRANSPARENT, RGB_HUI
